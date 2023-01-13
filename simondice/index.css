@@ -1,0 +1,59 @@
+* {
+	max-width: 1040px;
+	max-height: 740px;
+	margin: auto;
+}
+
+#contenedor-principal {
+	width: 80vw;
+	height: 80vh;
+
+}
+#contenedor-estado {
+	display: inline-flex;
+	background-color: rgba(131, 131, 255, 0.514);
+	height: 10vh;
+	width: 50vw;
+	border-radius: 25px;
+    align-self: left;
+	margin: 1% 1% 1% 0%;
+}
+
+#boton-empezar {
+	display: flexbox;
+}
+
+#cuadro-1,
+#cuadro-2,
+#cuadro-3,
+#cuadro-4 {
+	display: inline-flex;
+
+	flex-direction: row;
+
+	width: 25vw;
+	height: 35vh;
+	border-radius: 50px;
+}
+
+#cuadro-1 {
+	background-color: rgb(255, 100, 100);
+	opacity: 0.4;
+}
+#cuadro-2 {
+	background-color: rgb(100, 100, 255);
+	opacity: 0.4;
+}
+#cuadro-3 {
+	background-color: rgb(255, 255, 100);
+	opacity: 0.4;
+}
+#cuadro-4 {
+	background-color: rgb(100, 255, 100);
+	opacity: 0.4;
+}
+
+#turno {
+	margin: auto;
+	display: block;
+}
