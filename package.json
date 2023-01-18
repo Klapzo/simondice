@@ -1,0 +1,19 @@
+{
+  "name": "js-xmas-edition",
+  "version": "1.0.0",
+  "description": "juego simon dice. ejercicio",
+  "main": "simondice.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Klapzo/js-xmas-edition.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Klapzo/js-xmas-edition/issues"
+  },
+  "homepage": "https://github.com/Klapzo/js-xmas-edition#readme"
+}
