@@ -1,7 +1,10 @@
+
 body {
 	margin: 10px;
 }
-.cuadro {
+
+.cuadro{
+
 	transition: opacity 500ms;
 	height: 250px;
 	border-radius: 50px;
@@ -12,6 +15,7 @@ body {
 
 #cuadro-0 {
 	background-color: rgb(255, 100, 100);
+
 }
 #cuadro-1 {
 	background-color: rgb(100, 100, 255);
@@ -23,7 +27,11 @@ body {
 	background-color: rgb(100, 255, 100);
 }
 
-.modo-oscuro {
+
+.modo-oscuro{
 	background-color: #141d26;
 	color: #ffffff;
+
 }
+
+

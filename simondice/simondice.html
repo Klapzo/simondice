@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.css" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Simon Dice</title>
+	</head>
+	<body class="modo-oscuro">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-8">
+					<div id="estado" class="alert alert-primary" role="alert">
+						APRETÁ "EMPEZAR!" PARA JUGAR
+					</div>
+				</div>
+				<div class="col-1">
+					<span id="ronda">RONDA #-</span>
+				</div>
+				<div class="col-1">
+					<button id="boton-empezar" class="btn btn-primary">EMPEZAR!</button>
+				</div>
+
+				<div class="form-check form-switch col-1">
+					<label class="form-check-label">🌚</label>
+					<input
+						class="form-check-input mx-0"
+						type="checkbox"
+						id="flexSwitchCheckDefault"
+						checked
+					/>
+				</div>
+			</div>
+		</div>
+		<div id="contenedor-principal" class="container">
+			<div class="row">
+				<div class="col-4">
+					<div class="cuadro" id="cuadro-0"></div>
+				</div>
+				<div class="col-4">
+					<div class="cuadro" id="cuadro-1"></div>
+				</div>
+				<div class="vr p-0"></div>
+
+
+
+				
+				<div class="col-2  p-1" id="opciones">
+					<label class="mx-3">DIFICULTAD</label>
+					
+					<div class="btn-group m-3" role="group">
+
+							<input
+								type="radio"
+								class="btn-check"
+								name="btnradio"
+								id="btnradio1"
+								autocomplete="off"
+								checked
+							/>
+							<label class="btn btn-outline-success " for="btnradio1"> gay </label>
+
+							<input
+								type="radio"
+								class="btn-check "
+								name="btnradio"
+								id="btnradio2"
+								autocomplete="off"
+								
+							/>
+							<label class="btn btn-outline-warning" for="btnradio2"> masomeno </label>
+
+							<input
+								type="radio"
+								class="btn-check"
+								name="btnradio"
+								id="btnradio3"
+								autocomplete="off"
+							/>
+							<label class="btn btn-outline-danger" for="btnradio3"> nazi </label>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4">
+					<div class="cuadro" id="cuadro-2"></div>
+				</div>
+				<div class="col-4">
+					<div class="cuadro" id="cuadro-3"></div>
+				</div>
+				<div class="vr p-0"></div>
+			</div>
+		</div>
+
+		<script src="simondice.js"></script>
+		<script src="pruebassd.js"></script>
+	</body>
+</html>
