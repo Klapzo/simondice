@@ -16,7 +16,6 @@ function reiniciarEstado() {
 	secuenciaUsuario = [];
 	secuenciaMaquina = [];
 	document.querySelector("#ronda").innerText = "RONDA #-";
-
 }
 
 function cuadroRandom() {
@@ -54,13 +53,10 @@ function turnoUsuario() {
 	delayJugador = (secuenciaMaquina.length + 1) * 1250;
 	setTimeout(function () {
 		manejarEstado("TU TURNO DALE");
-		
-		document.querySelectorAll(".cuadro").forEach(function($cuadro){
 
+		document.querySelectorAll(".cuadro").forEach(function ($cuadro) {
 			$cuadro.onclick = manejarTurnoUsuario;
-
-		})
-
+		});
 	}, delayJugador);
 }
 function manejarTurnoUsuario(e) {
@@ -73,14 +69,13 @@ function manejarTurnoUsuario(e) {
 
 	if (secuenciaMaquina.length === secuenciaUsuario.length) {
 		validarInputUsuario();
-
 	}
 }
 function validarInputUsuario() {
 	for (let i = 0; i < secuenciaMaquina.length; i++) {
 		if (secuenciaMaquina[i] !== secuenciaUsuario[i]) {
 			manejarEstado("PERDISTE JAJAJA", true);
-			reiniciarEstado()
+			reiniciarEstado();
 			return;
 		}
 	}
