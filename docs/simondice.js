@@ -53,7 +53,7 @@ function bloquearInputUsuario() {
 function turnoUsuario() {
 	delayJugador = (secuenciaMaquina.length + 1) * 1250;
 	setTimeout(function () {
-		manejarEstado("TU TURNO DALE");
+		manejarEstado("it's your turn!");
 		
 		document.querySelectorAll(".cuadro").forEach(function($cuadro){
 
@@ -66,7 +66,7 @@ function turnoUsuario() {
 function manejarTurnoUsuario(e) {
 	if (e.target.id) {
 		var $cuadroUsuario = Number(e.target.id.at(-1));
-		console.log("el jugador toco el " + $cuadroUsuario);
+		console.log("you played the " + $cuadroUsuario);
 		secuenciaUsuario.push($cuadroUsuario);
 		resaltarCuadro($cuadroUsuario);
 	}
@@ -79,7 +79,7 @@ function manejarTurnoUsuario(e) {
 function validarInputUsuario() {
 	for (let i = 0; i < secuenciaMaquina.length; i++) {
 		if (secuenciaMaquina[i] !== secuenciaUsuario[i]) {
-			manejarEstado("PERDISTE JAJAJA", true);
+			manejarEstado("you loose :(", true);
 			reiniciarEstado()
 			return;
 		}
